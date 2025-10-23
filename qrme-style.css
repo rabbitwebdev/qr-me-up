@@ -1,0 +1,41 @@
+.qrme-form {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 400px;
+    margin: 20px auto;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.qrme-form input,
+.qrme-form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+.qrme-form button {
+    background: #0073aa;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.qrme-form button:hover {
+    background: #005f8d;
+}
+
+.qrme-download {
+    display: inline-block;
+    background: #28a745;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.qrme-download:hover {
+    background: #218838;
+}
