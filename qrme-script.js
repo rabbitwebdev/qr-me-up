@@ -2,13 +2,14 @@ jQuery(document).ready(function($){
     $('#qrme-generator-form').on('submit', function(e){
         e.preventDefault();
 
-        var formData = $(this).serialize();
-
         $('#qrme-result').html('<p>Generating your QR Code...</p>');
 
         $.post(qrme_ajax.ajax_url, {
             action: 'qrme_generate',
-            ...Object.fromEntries(new URLSearchParams(formData))
+            name: $('input[name="name"]').val(),
+            email: $('input[name="email"]').val(),
+            url: $('input[name="url"]').val(),
+            message: $('textarea[name="message"]').val()
         }, function(response){
             if(response.success){
                 $('#qrme-result').html(`
